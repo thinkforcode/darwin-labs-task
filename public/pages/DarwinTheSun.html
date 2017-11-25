@@ -1,0 +1,39 @@
+<nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" href="#">
+  The Sun
+  </a>
+  <span>
+
+  </span>
+  <span style="text-align:right;">
+    <a class="navbar-brand" href="#" style="float:right;" ng-click="next(tags)">
+
+    </a>
+  </span>
+
+</nav>
+<hr/>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="form-group">
+        <input type="text" ng-model="user.keyword"class="form-control" value="" placeholder="Search any images .... :) ">
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <button class="btn btn-primary" ng-click="getAllImages(user)" >Search Images</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div ng-repeat="image in allImages track by $index">
+        <a href="{{image.url}}">{{image.url}}</a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03jykIryR1MnFMMyo2M8ZCy-pPtl9ZrqAK07nhGVztxvGi7xdGnMn527s" style="width:100px; height:100px;" class="thumbnail" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>

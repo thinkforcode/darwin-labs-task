@@ -1,0 +1,24 @@
+{
+  "name": "go",
+  "version": "0.0.1",
+  "description": "d",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node index.js"
+  },
+  "author": "Manmohan Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "base64-img": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4",
+    "node-base64-image": "^1.0.4",
+    "redis": "^2.8.0",
+    "request": "^2.83.0"
+  }
+}
